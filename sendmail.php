@@ -19,8 +19,8 @@ $mail->Subject = 'Привіт! Це "Фрилансер по життю" ';
 
 // Рука
 $hand ="Правая";
-if($_POST['hand']=="left"){
-    $hand="Ліва";
+if($_POST['hand'] == "left"){
+    $hand = "Ліва";
 }
 
 // Тіло листа
@@ -50,7 +50,7 @@ if(!empty($_FILES['image']['tmp_name'])) {
     // грузимо файл
     if(copy($_FILES['image']['tmp_name'], $filePath)){  
         $fileAttach = $filePath;
-        $body.='<p><strong>Фото в додатку</strong></p>';
+        $body.='<p><strong>Фото в додатку</strong>';
         $mail->addAttachment($fileAttach);
     }
 }
