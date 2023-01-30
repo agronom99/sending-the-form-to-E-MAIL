@@ -11,7 +11,7 @@ $mail->setLanguage('uk', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 // Від кого лист
-$mail->setForm('info@gmail.com', 'Фрилансер по життю');
+$mail->setForm('agronom99.github.io', 'Фрилансер по життю');
 // кому відправити
 $mail->addAddress('agronom9913@gmail.com');
 // Тема листа
