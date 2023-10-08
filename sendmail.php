@@ -11,7 +11,7 @@ $mail->setLanguage('uk', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 // Від кого лист
-$mail->setForm('https://agronom99.github.io/sending-the-form-to-E-MAIL/', 'Фрилансер по життю');
+$mail->setForm('Фрилансер по життю');
 // кому відправити
 $mail->addAddress('agronom9913@gmail.com');
 // Тема листа
